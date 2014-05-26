@@ -1,0 +1,16 @@
+# This file provides instructions for packaging.
+
+@prefix : <http://ontologi.es/doap-deps#>.
+
+`Dist-Inkt-DOAP`
+	:test-requirement       [ :on "Test::More 0.96"^^:CpanId ];
+	:runtime-requirement    [ :on "Moose 2.0800"^^:CpanId ];
+	:runtime-requirement    [ :on "Dist::Inkt 0.001"^^:CpanId ];
+	:runtime-requirement    [ :on "MooX::Struct 0"^^:CpanId ];
+	:runtime-requirement    [ :on "RDF::DOAP::Project 0.007"^^:CpanId ];
+	:runtime-requirement    [ :on "RDF::Trine 1.000"^^:CpanId ];
+	:runtime-requirement    [ :on "RDF::TrineX::Functions 0"^^:CpanId ];
+	:runtime-requirement    [ :on "RDF::TrineX::Parser::Pretdsl 0.205"^^:CpanId ];
+	:runtime-requirement    [ :on "RDF::TrineX::Serializer::MockTurtleSoup 0"^^:CpanId ];
+	.
+
