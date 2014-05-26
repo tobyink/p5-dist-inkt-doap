@@ -27,7 +27,7 @@ BEGIN {
 			);
 	};
 
-	$_serialize_stanza = sub 
+	$_serialize_stanza = sub
 	{
 		my $self = shift;
 		my $str;
@@ -244,7 +244,7 @@ around _inherited_rights => sub
 	my $self = shift;
 	my ($f) = @_;
 	
-	my @licence_uris = @{$self->metadata->{resources}{license} || [] };	
+	my @licence_uris = @{$self->metadata->{resources}{license} || [] };
 	if (@licence_uris)
 	{
 		my $holders = Moose::Util::english_list(
