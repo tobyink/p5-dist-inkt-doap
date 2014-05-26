@@ -4,3 +4,8 @@
 	issued  2014-05-26;
 	label   "Initial release".
 
+`Dist-Inkt-DOAP 0.017 cpan:TOBYINK`
+	issued  2014-05-26;
+	changeset [
+		item "Fix syntax error in DetermineRightsFromRdf.pm."^^Bugfix;
+	].
