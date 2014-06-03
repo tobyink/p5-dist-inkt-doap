@@ -4,7 +4,6 @@ our $AUTHORITY = 'cpan:TOBYINK';
 our $VERSION   = '0.017';
 
 use Moose::Role;
-use RDF::DOAP::ChangeSets;
 use namespace::autoclean;
 
 with 'Dist::Inkt::Role::RDFModel';
