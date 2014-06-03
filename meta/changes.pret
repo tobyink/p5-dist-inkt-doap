@@ -9,3 +9,11 @@
 	changeset [
 		item "Fix syntax error in DetermineRightsFromRdf.pm."^^Bugfix;
 	].
+
+`Dist-Inkt-DOAP 0.018 cpan:TOBYINK`
+	issued  2014-06-03;
+	changeset [
+		item "Test that all roles actually compile."^^Tests;
+		item "Require Dist::Inkt 0.017."^^Packaging;
+		item "Don't need to load RDF::DOAP::ChangeSets."^^Bugfix;
+	].
