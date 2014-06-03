@@ -25,6 +25,15 @@ use warnings;
 use Test::More;
 
 use_ok('Dist::Inkt::DOAP');
+use_ok('Dist::Inkt::Role::WriteCREDITS');
+use_ok('Dist::Inkt::Role::ReadMetaDir');
+use_ok('Dist::Inkt::Role::RDFModel');
+use_ok('Dist::Inkt::Role::WriteDOAP');
+use_ok('Dist::Inkt::Role::WriteChanges');
+use_ok('Dist::Inkt::Role::WriteCOPYRIGHT');
+use_ok('Dist::Inkt::Role::ProcessDOAP');
+use_ok('Dist::Inkt::Role::DetermineRightsFromRdf');
+use_ok('Dist::Inkt::Role::ProcessDOAPDeps');
 
 done_testing;
 
