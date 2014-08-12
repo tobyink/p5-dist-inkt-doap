@@ -17,3 +17,10 @@
 		item "Require Dist::Inkt 0.017."^^Packaging;
 		item "Don't need to load RDF::DOAP::ChangeSets."^^Bugfix;
 	].
+
+`Dist-Inkt-DOAP 0.019 cpan:TOBYINK`
+	issued  2014-08-12;
+	changeset [
+		item "Add a DESCRIPTION to Dist::Inkt::DOAP."^^Documentation;
+		item "Cope better with nulls when generating CREDITS file."^^Bugfix;
+	].
