@@ -42,7 +42,7 @@ sub Build_CREDITS
 		(my $method = "gather_all_${role}s") =~ s/ss$/s/s;
 		my @peeps =
 			sort { $a->to_string cmp $b->to_string }
-			grep { not $already{$_}++ }
+			grep { blessed($_) and not $already{$_}++ }
 			$self->doap_project->$method;
 		next unless @peeps;
 		
