@@ -153,7 +153,7 @@ sub cpanmeta_resources
 		grep defined,
 		$self->doap_project->rdf_about;
 	
-	($resources{x_IRC})
+	($resources{x_IRC}) =
 		map  { $_->uri }
 		grep defined,
 		$self->model->objects(RDF::Trine::iri($self->project_uri), $CPAN->x_IRC);
