@@ -1,7 +1,7 @@
 package Dist::Inkt::Role::WriteDOAP;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.019';
+our $VERSION   = '0.020';
 
 use Moose::Role;
 use RDF::TrineX::Functions 'serialize';
