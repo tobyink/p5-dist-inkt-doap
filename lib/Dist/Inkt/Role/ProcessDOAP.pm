@@ -138,21 +138,26 @@ sub cpanmeta_resources
 		}
 	}
 	
-	($resources{X_mailinglist}) =
+	($resources{x_mailinglist}) =
 		map  { $_->uri }
 		grep defined,
 		$self->doap_project->mailing_list;
 	
-	($resources{X_wiki}) =
+	($resources{x_wiki}) =
 		map  { $_->uri }
 		grep defined,
 		$self->doap_project->wiki;
-
-	($resources{X_identifier}) =
+	
+	($resources{x_identifier}) =
 		map  { $_->uri }
 		grep defined,
 		$self->doap_project->rdf_about;
-
+	
+	($resources{x_IRC})
+		map  { $_->uri }
+		grep defined,
+		$self->model->objects(RDF::Trine::iri($self->project_uri), $CPAN->x_IRC);
+	
 	delete $resources{$_} for grep !defined $resources{$_}, keys %resources;
 	
 	return \%resources;
