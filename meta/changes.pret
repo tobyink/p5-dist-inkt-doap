@@ -30,3 +30,9 @@
 	changeset [
 		item "Support x_IRC."^^Change;
 	].
+
+`Dist-Inkt-DOAP 0.021 cpan:TOBYINK`
+	issued  2014-09-14;
+	changeset [
+		item "Include test to check if changelog data is up-to-date."^^Change;
+	].
