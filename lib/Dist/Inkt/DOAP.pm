@@ -15,6 +15,8 @@ __END__
 
 =encoding utf-8
 
+=for stopwords tarball
+
 =head1 NAME
 
 Dist::Inkt::DOAP - various DOAP-related roles for Dist::Inkt
