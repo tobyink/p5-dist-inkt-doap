@@ -19,8 +19,16 @@ after BUILD => sub {
 	$self->setup_prebuild_test(sub {
 		my $self = shift;
 		
-		my ($latest_in_meta) = $self->doap_project->sorted_releases;
-		$latest_in_meta = $latest_in_meta->revision;
+		$self->log("Checking DOAP changeset metadata is current");
+		
+		my $latest_in_meta = $self->doap_project->sorted_releases->[-1];
+		$latest_in_meta = $latest_in_meta->revision if $latest_in_meta;
+		
+		if (!defined $latest_in_meta)
+		{
+			$self->log("No versions listed in DOAP");
+			die "Please update DOAP changelog";
+		}
 		
 		my $current_version = $self->version;
 		
