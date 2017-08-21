@@ -6,6 +6,7 @@ our $VERSION   = '0.022';
 use Moose::Role;
 use List::MoreUtils 'uniq';
 use namespace::autoclean;
+use URI;
 
 with 'Dist::Inkt::Role::RDFModel';
 
@@ -157,7 +158,15 @@ sub cpanmeta_resources
 		map  { $_->uri }
 		grep defined,
 		$self->model->objects(RDF::Trine::iri($self->project_uri), $CPAN->x_IRC);
-	
+
+	foreach my $forum (@{ $self->doap_project->support_forum }) {
+		my $forumuri = URI->new($forum->uri);
+		if ($forumuri->scheme =~ m/^ircs?$/) {
+			$resources{x_IRC} = $forumuri->as_string;
+			last;
+		}
+	}
+
 	delete $resources{$_} for grep !defined $resources{$_}, keys %resources;
 	
 	return \%resources;
