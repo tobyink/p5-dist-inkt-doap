@@ -4,7 +4,7 @@ our $AUTHORITY = 'cpan:TOBYINK';
 our $VERSION   = '0.022';
 
 use Moose::Role;
-use List::MoreUtils 'uniq';
+use List::Util 'uniq';
 use namespace::autoclean;
 use URI;
 

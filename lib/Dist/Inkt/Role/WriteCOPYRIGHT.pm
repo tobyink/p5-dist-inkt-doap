@@ -4,7 +4,7 @@ our $AUTHORITY = 'cpan:TOBYINK';
 our $VERSION   = '0.022';
 
 use Moose::Role;
-use List::MoreUtils qw( uniq );
+use List::Util qw( uniq );
 use Path::Tiny qw( path );
 use Path::Iterator::Rule;
 use Software::License;

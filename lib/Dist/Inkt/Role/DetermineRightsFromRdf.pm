@@ -5,7 +5,7 @@ our $VERSION   = '0.022';
 
 use Moose::Role;
 use RDF::Trine qw( iri literal statement variable );
-use List::MoreUtils qw( uniq );
+use List::Util qw( uniq );
 use Path::Tiny qw( path );
 use Path::Iterator::Rule;
 use Software::License;
