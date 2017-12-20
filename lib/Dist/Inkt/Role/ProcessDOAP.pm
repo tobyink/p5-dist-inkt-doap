@@ -159,12 +159,14 @@ sub cpanmeta_resources
 		grep defined,
 		$self->model->objects(RDF::Trine::iri($self->project_uri), $CPAN->x_IRC);
 
-	foreach my $forum (@{ $self->doap_project->support_forum }) {
-		my $forumuri = URI->new($forum->uri);
-		if ($forumuri->scheme =~ m/^ircs?$/) {
+	if (defined($self->doap_project->support_forum)) {
+	  foreach my $forum (@{ $self->doap_project->support_forum }) {
+		 my $forumuri = URI->new($forum->uri);
+		 if ($forumuri->scheme =~ m/^ircs?$/) {
 			$resources{x_IRC} = $forumuri->as_string;
 			last;
-		}
+		 }
+	  }
 	}
 
 	delete $resources{$_} for grep !defined $resources{$_}, keys %resources;
