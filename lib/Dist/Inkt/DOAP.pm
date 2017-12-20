@@ -52,7 +52,7 @@ Index. >>
 =head1 BUGS
 
 Please report any bugs to
-L<http://rt.cpan.org/Dist/Display.html?Queue=Dist-Inkt-DOAP>.
+L<https://github.com/kjetilk/p5-dist-inkt-doap/issues>
 
 =head1 SEE ALSO
 
