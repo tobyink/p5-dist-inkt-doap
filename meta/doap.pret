@@ -12,7 +12,7 @@
     :download-page        <https://metacpan.org/release/Dist-Inkt-DOAP>;
     :bug-database         <https://github.com/kjetilk/p5-dist-inkt-doap/issues>;
     :repository           [ a :GitRepository;
-        :browse <https://github.com/kjetilk/p5-dist-inkt-doap>
+        :browse <https://github.com/kjetilk/p5-dist-inkt-doap> ;
         prov:has_provenance <http://git2prov.org/git2prov?giturl=https%3A%2F%2Fgithub.com%2Fkjetilk%2Fp5-dist-inkt-doap&serialization=PROV-O#>
         ];
     :support-forum        <irc://irc.perl.org/#perlrdf> ;
