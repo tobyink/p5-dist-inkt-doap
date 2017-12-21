@@ -16,5 +16,13 @@
     :runtime-requirement    [ :on "RDF::TrineX::Parser::Pretdsl 0.205"^^:CpanId ];
     :runtime-requirement    [ :on "RDF::TrineX::Serializer::MockTurtleSoup 0"^^:CpanId ];
     
+    :runtime-requirement    [ :on "Path::Iterator::Rule 0"^^:CpanId ];
+    :runtime-requirement    [ :on "Path::Tiny 0"^^:CpanId ];
+    :runtime-requirement    [ :on "Software::License 0"^^:CpanId ];
+    :runtime-requirement    [ :on "Software::LicenseUtils 0"^^:CpanId ];
+    :runtime-requirement    [ :on "Types::Standard 0"^^:CpanId ];
+    :runtime-requirement    [ :on "URI 0"^^:CpanId ];
+    :runtime-requirement    [ :on "namespace::autoclean 0"^^:CpanId ];
+
     .
 
