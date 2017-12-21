@@ -43,7 +43,7 @@
 		item "ETHER wants me to use a version range string in x_breaks."^^Change;
 	].
 
-`Dist-Inkt-DOAP 0.023_01 cpan:KJETILK`
+`Dist-Inkt-DOAP 0.023_02 cpan:KJETILK`
 	issued  2017-12-21;
 	changeset [
 	  item "Replace List::MoreUtils with List::Util."^^Change;
