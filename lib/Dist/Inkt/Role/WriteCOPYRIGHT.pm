@@ -1,7 +1,7 @@
 package Dist::Inkt::Role::WriteCOPYRIGHT;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.023_02';
+our $VERSION   = '0.100';
 
 use Moose::Role;
 use List::Util qw( uniq );
