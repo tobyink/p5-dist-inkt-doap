@@ -3,16 +3,26 @@
 @prefix : <http://ontologi.es/doap-deps#>.
 
 `Dist-Inkt-DOAP`
-	:test-requirement       [ :on "Test::More 0.96"^^:CpanId ];
-	:runtime-requirement    [ :on "perl 5.010001"^^:CpanId ];
-	:runtime-requirement    [ :on "Moose 2.0800"^^:CpanId ];
-	:runtime-requirement    [ :on "Dist::Inkt 0.017"^^:CpanId ];
-	:runtime-requirement    [ :on "Dist::Inkt::Role::Test"^^:CpanId ];
-	:runtime-requirement    [ :on "MooX::Struct 0"^^:CpanId ];
-	:runtime-requirement    [ :on "RDF::DOAP::Project 0.007"^^:CpanId ];
-	:runtime-requirement    [ :on "RDF::Trine 1.000"^^:CpanId ];
-	:runtime-requirement    [ :on "RDF::TrineX::Functions 0"^^:CpanId ];
-	:runtime-requirement    [ :on "RDF::TrineX::Parser::Pretdsl 0.205"^^:CpanId ];
-	:runtime-requirement    [ :on "RDF::TrineX::Serializer::MockTurtleSoup 0"^^:CpanId ];
-	.
+    :test-requirement       [ :on "Test::More 0.96"^^:CpanId ];
+    :runtime-requirement    [ :on "perl 5.010001"^^:CpanId ];
+    :runtime-requirement    [ :on "Moose 2.0800"^^:CpanId ];
+    :runtime-requirement    [ :on "Dist::Inkt 0.017"^^:CpanId ];
+    :runtime-requirement    [ :on "Dist::Inkt::Role::Test"^^:CpanId ];
+    :runtime-requirement    [ :on "MooX::Struct 0"^^:CpanId ];
+    :runtime-requirement    [ :on "List::Util 1.45"^^:CpanId ];
+    :runtime-requirement    [ :on "RDF::DOAP::Project 0.007"^^:CpanId ];
+    :runtime-requirement    [ :on "RDF::Trine 1.000"^^:CpanId ];
+    :runtime-requirement    [ :on "RDF::TrineX::Functions 0"^^:CpanId ];
+    :runtime-requirement    [ :on "RDF::TrineX::Parser::Pretdsl 0.205"^^:CpanId ];
+    :runtime-requirement    [ :on "RDF::TrineX::Serializer::MockTurtleSoup 0"^^:CpanId ];
+    
+    :runtime-requirement    [ :on "Path::Iterator::Rule 0"^^:CpanId ];
+    :runtime-requirement    [ :on "Path::Tiny 0"^^:CpanId ];
+    :runtime-requirement    [ :on "Software::License 0"^^:CpanId ];
+    :runtime-requirement    [ :on "Software::LicenseUtils 0"^^:CpanId ];
+    :runtime-requirement    [ :on "Types::Standard 0"^^:CpanId ];
+    :runtime-requirement    [ :on "URI 0"^^:CpanId ];
+    :runtime-requirement    [ :on "namespace::autoclean 0"^^:CpanId ];
+
+    .
 

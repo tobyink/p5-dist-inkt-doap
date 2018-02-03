@@ -1,20 +1,27 @@
 # This file contains general metadata about the project.
 
 @prefix : <http://usefulinc.com/ns/doap#>.
-@prefix cpant: <http://purl.org/NET/cpan-uri/terms#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix result: <http://git2prov.org/git2prov?giturl=https%3A%2F%2Fgithub.com%2Fkjetilk%2Fp5-dist-inkt-doap&serialization=PROV-O#> .
+
 
 `Dist-Inkt-DOAP`
-	:programming-language "Perl" ;
-	:shortdesc            "various DOAP-related roles for Dist::Inkt";
-	:homepage             <https://metacpan.org/release/Dist-Inkt-DOAP>;
-	:download-page        <https://metacpan.org/release/Dist-Inkt-DOAP>;
-	:bug-database         <http://rt.cpan.org/Dist/Display.html?Queue=Dist-Inkt-DOAP>;
-	:repository           [ a :GitRepository; :browse <https://github.com/tobyink/p5-dist-inkt-doap> ];
-	cpant:x_IRC           <irc://irc.perl.org/#perlrdf>;
-	:created              2014-05-26;
-	:license              <http://dev.perl.org/licenses/>;
-	:maintainer           cpan:TOBYINK;
-	:developer            cpan:TOBYINK.
+    :programming-language "Perl" ;
+    :shortdesc            "various DOAP-related roles for Dist::Inkt";
+    :homepage             <https://metacpan.org/release/Dist-Inkt-DOAP>;
+    :download-page        <https://metacpan.org/release/Dist-Inkt-DOAP>;
+    :bug-database         <https://github.com/kjetilk/p5-dist-inkt-doap/issues>;
+    :repository           [ a :GitRepository;
+        :browse <https://github.com/kjetilk/p5-dist-inkt-doap> ;
+        prov:has_provenance <http://git2prov.org/git2prov?giturl=https%3A%2F%2Fgithub.com%2Fkjetilk%2Fp5-dist-inkt-doap&serialization=PROV-O#>
+        ];
+    :support-forum        <irc://irc.perl.org/#perlrdf> ;
+    :created              2014-05-26;
+    :license              <http://dev.perl.org/licenses/>;
+    :category             <http://dbpedia.org/resource/Category:Semantic_Web> ,
+                          <http://dbpedia.org/resource/Category:Package_management_systems> ;
+    :maintainer           cpan:TOBYINK, cpan:KJETILK ;
+    :developer            cpan:TOBYINK.
 
 <http://dev.perl.org/licenses/>
 	dc:title  "the same terms as the perl 5 programming language system itself".

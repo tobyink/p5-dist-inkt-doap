@@ -42,3 +42,11 @@
 	changeset [
 		item "ETHER wants me to use a version range string in x_breaks."^^Change;
 	].
+
+`Dist-Inkt-DOAP 0.100 cpan:KJETILK`
+	issued  2017-12-22;
+	changeset [
+	  item "Replace List::MoreUtils with List::Util."^^Change;
+ 	  item "Use RDF::DOAP::Project method to find IRC channel."^^Addition;
+	  item "Some minor changes."^^Change;
+	].

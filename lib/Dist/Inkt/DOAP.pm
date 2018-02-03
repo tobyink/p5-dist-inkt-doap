@@ -5,7 +5,7 @@ use warnings;
 package Dist::Inkt::DOAP;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.022';
+our $VERSION   = '0.100';
 
 1;
 
@@ -52,7 +52,7 @@ Index. >>
 =head1 BUGS
 
 Please report any bugs to
-L<http://rt.cpan.org/Dist/Display.html?Queue=Dist-Inkt-DOAP>.
+L<https://github.com/kjetilk/p5-dist-inkt-doap/issues>
 
 =head1 SEE ALSO
 
@@ -61,10 +61,11 @@ L<Dist::Inkt>.
 =head1 AUTHOR
 
 Toby Inkster E<lt>tobyink@cpan.orgE<gt>.
+Kjetil Kjernsmo E<lt>kjetilk@cpan.orgE<gt>.
 
 =head1 COPYRIGHT AND LICENCE
 
-This software is copyright (c) 2014 by Toby Inkster.
+This software is copyright (c) 2014 by Toby Inkster, 2017 by Kjetil Kjernsmo
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
